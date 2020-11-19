@@ -30,6 +30,14 @@ $(document).ready(function() {
 			})
 		}
 
+		if ($('.menu__body').hasClass('open')) {
+			$('.menu__link').on('click', function(e){
+				$('.menu__body').removeClass('open');
+				$('.icon-menu').removeClass('open');
+				$('body').removeClass('lock');
+			})
+		}
+
 		$(document).on('click', function(e) {
 			if (!$(e.target).closest(".menu").length) {
 				$('.menu__body').removeClass('open');

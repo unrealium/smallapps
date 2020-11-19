@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
 <body>
@@ -21,10 +22,11 @@
 					</div>
 					<div class="menu__body">
 						<ul class="menu__list">
-							<li><a href="" class="menu__link">Home</a></li>
-							<li><a href="" class="menu__link">Features</a></li>
-							<li><a href="" class="menu__link">Screenshot</a></li>
-							<li><a href="" class="menu__link">Gallery</a></li>
+							<li><a href="index.html" class="menu__link">Home</a></li>
+							<li><a href="#feature" class="menu__link">Features</a></li>
+							<li><a href="#block-1" class="menu__link">Block-1</a></li>
+							<li><a href="#gallery" class="menu__link">Gallery</a></li>
+							<li><a href="#block-2" class="menu__link">Block-2</a></li>
 						</ul>
 						<ul class="menu__info">
 							<li class="menu__telephone"><span>800-123-456</span></li>
@@ -51,7 +53,7 @@
         		<img src="img/header/bg.jpg" alt="">
         	</div>
         </div>
-        <div class="feature">
+        <div id="feature" class="feature">
         	<div class="container">
         		<div class="feature__head gray-title">
         			<div class="gray-title__title">Heading Feature title goes here</div>
@@ -121,7 +123,7 @@
         		</div>
         	</div>
         </div>
-        <div class="info-block-1">
+        <div id="block-1" class="info-block-1">
         	<div class="container">
         		<div class="info-block-1__row">
         			<div class="info-block-1__column">
@@ -142,7 +144,7 @@
         		</div>
         	</div>
         </div>
-        <div class="gallery">
+        <div id="gallery" class="gallery">
         	<div class="container">
         		<div class="gallery__head gray-title">
         			<div class="gray-title__title">Our Latest screenshots gallery</div>
@@ -178,7 +180,7 @@
         		</div>
         	</div>
         </div>
-        <div class="info-block-2">
+        <div id="block-2" class="info-block-2">
         	<div class="container">
         		<div class="info-block-2__row">
         			<div class="info-block-2__column info-block-2__column_image">
@@ -247,8 +249,35 @@
         		</form>
         	</div>
         </div>
-		<footer>
-			
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__title">Say Hi, Get In Touch</div>
+				<ul class="footer__social social-footer">
+					<li>
+						<a href="" class="social-footer__link"><img src="img/footer/ico_01.png" alt=""></a>
+					</li>
+					<li>
+						<a href="" class="social-footer__link"><img src="img/footer/ico_02.png" alt=""></a>
+					</li>
+					<li>
+						<a href="" class="social-footer__link"><img src="img/footer/ico_03.png" alt=""></a>
+					</li>
+					<li>
+						<a href="" class="social-footer__link"><img src="img/footer/ico_04.png" alt=""></a>
+					</li>
+					<li>
+						<a href="" class="social-footer__link"><img src="img/footer/ico_05.png" alt=""></a>
+					</li>
+				</ul>
+				<ul class="footer__menu menu-footer">
+					<li><a href="" class="menu-footer__link">Contact</a></li>
+					<li><a href="" class="menu-footer__link">Twitter</a></li>
+					<li><a href="" class="menu-footer__link">Press</a></li>
+					<li><a href="" class="menu-footer__link">Support</a></li>
+					<li><a href="" class="menu-footer__link">Developers</a></li>
+					<li><a href="" class="menu-footer__link">Privacy</a></li>
+				</ul>
+			</div>
 		</footer>
     </div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

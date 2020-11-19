@@ -5,7 +5,7 @@ $(document).ready(function() {
 	$(window).scroll(function(){
 		var wScroll = $(this).scrollTop();
 		// Activate menu
-		if (wScroll > 40) {
+		if (wScroll > 20) {
 			$('.header').addClass('active');
 		}
 		else {
@@ -92,37 +92,56 @@ $(document).ready(function() {
 		});
 	});
 
-	$(document).ready(function(){
-		if($('.slider__body').length>0){
-			$('.slider__body').slick({
-				//autoplay: true,
-				// infinite: false,
-				dots: false,
-				arrows: true,
-				accessibility: false,
-				slidesToShow: 3,
-				slidesToScroll: 2,
-				autoplaySpeed: 1000,
-				adaptiveHeight: true,
-				nextArrow:'<button type="button" class="slick-next"></button>',
-				prevArrow:'<button type="button" class="slick-prev"></button>',
-				responsive: [
-					{
-						breakpoint: 768,
-						settings: {
-							slidesToShow: 2,
-							slidesToScroll: 1
-						}
-					},
-					{
-						breakpoint: 500,
-						settings: {
-							slidesToShow: 1,
-							slidesToScroll: 1
-						}
-					},
-				]
-			});
-		}
-	});
+	if($('.slider-gallery__body').length>0){
+		$('.slider-gallery__body').slick({
+			//autoplay: true,
+			// infinite: false,
+			dots: false,
+			arrows: true,
+			accessibility: false,
+			slidesToShow: 3,
+			slidesToScroll: 2,
+			autoplaySpeed: 1000,
+			adaptiveHeight: true,
+			nextArrow:'<button type="button" class="slick-next"></button>',
+			prevArrow:'<button type="button" class="slick-prev"></button>',
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 500,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				},
+			]
+		});
+	}
+	if($('.slider-say-about__body').length>0){
+		$('.slider-say-about__body').slick({
+			//autoplay: true,
+			// infinite: false,
+			dots: true,
+			arrows: false,
+			accessibility: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplaySpeed: 1000,
+			adaptiveHeight: true,
+			nextArrow:'<button type="button" class="slick-next"></button>',
+			prevArrow:'<button type="button" class="slick-prev"></button>',
+			responsive: [{
+				breakpoint: 768,
+				settings: {
+					
+				}
+			}]
+		});
+	}
 });

@@ -35,6 +35,10 @@ html, body {
 
 input, button, textarea {
   font-family: inherit;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 input::-ms-clear {
@@ -1160,6 +1164,7 @@ body.lock {
 @media (max-width: 600px) {
   .form-subscribe__input {
     height: 40px;
+    border-radius: 20px;
     padding: 0px 0px 0px 20px;
   }
 }
@@ -1191,6 +1196,7 @@ body.lock {
 @media (max-width: 600px) {
   .form-subscribe__button {
     font-size: 15px;
+    border-radius: 20px;
     padding: 0px 25px;
   }
 }

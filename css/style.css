@@ -80,8 +80,10 @@ body {
   font-size: 14px;
   font-family: "Raleway", sans-serif;
 }
-body.lock {
-  overflow: hidden;
+@media (max-width: 500px) {
+  body.lock {
+    overflow: hidden;
+  }
 }
 
 .wrapper {
@@ -325,7 +327,6 @@ body.lock {
 }
 
 .menu__body {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,7 +409,7 @@ body.lock {
     -o-transition: right 0.5s cubic-bezier(0.545, 0, 0.05, 1);
     transition: right 0.5s cubic-bezier(0.545, 0, 0.05, 1);
   }
-  .menu__body.open {
+  .menu__body.active {
     right: 0;
   }
   .menu__list {
@@ -518,7 +519,7 @@ body.lock {
     top: 0;
     right: -100%;
   }
-  .menu__body.open {
+  .menu__body.active {
     right: 0;
   }
 }
@@ -857,9 +858,9 @@ body.lock {
 }
 .tab__content {
   display: none;
-  -webkit-transition: opacity 0.1s ease;
-  -o-transition: opacity 0.1s ease;
-  transition: opacity 0.1s ease;
+  -webkit-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 .tab__content.active {
   display: block;
@@ -1027,6 +1028,9 @@ body.lock {
   }
 }
 .slider-gallery__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
